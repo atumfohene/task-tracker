@@ -1,6 +1,6 @@
 import React from "react";
 import { useTaskContext } from "../context/TaskContext";
-import "../styles/App.css";
+import "../styles/AppNew.css";
 
 const Search: React.FC = () => {
   const { searchQuery, setSearchQuery } = useTaskContext();

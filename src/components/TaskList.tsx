@@ -15,7 +15,7 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 import TaskItem from "./TaskItem";
 import { useTaskContext } from "../context/TaskContext";
-import "../styles/App.css";
+import "../styles/AppNew.css";
 
 const TaskList: React.FC = () => {
   const { tasks, setTasks, filterPriority, searchQuery } = useTaskContext();

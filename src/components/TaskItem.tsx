@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Task } from "../types";
 import { useTaskContext } from "../context/TaskContext";
-import "../styles/App.css";
+import "../styles/AppNew.css";
 
 
 

@@ -5,7 +5,7 @@ import TaskList from "./components/TaskList";
 
 import Search from "./components/Search";
 import { TaskProvider } from "./context/TaskContext";
-import "./styles/App.css";
+import "./styles/AppNew.css";
 
 const App: React.FC = () => {
   return (

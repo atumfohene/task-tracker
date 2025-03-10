@@ -1,0 +1,291 @@
+
+/* Base Styles */
+body {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  transition: background 0.5s, color 0.5s;
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #e0e0e0;
+}
+
+/* Light Mode (Default) */
+* Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #e0e0e0;
+}
+
+/* Container */
+
+/* Light/Dark Mode Card */
+.searchContainer {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 5px;
+  text-align: left;
+  padding: 5px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: background 0.5s;
+}
+
+.taskTitle,.taskDescription {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 5px;
+  text-align: left;
+  padding: 5px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: background 0.5s;
+}
+
+.input-dark {
+  width: 65%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Placeholder Styling */
+.input-dark::placeholder {
+  color: #888;
+  opacity: 0.8;
+}
+
+
+/* Button */
+.btn-edit {
+  width: 200px;
+  height: 40px;
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-delete {
+  width: 200px;
+  height: 40px;
+  background-color: #f63b3b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-save {
+  width: 200px;
+  height: 40px;
+  background-color: #3bf64b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+
+
+
+.edit-title {
+  width: 89%;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-description {
+  width: 89%;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: linear-gradient(135deg, #f8d1d1, #99a19f);
+  color: #0a0a0a;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-title{
+  width: 89%;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: linear-gradient(135deg, #f8d1d1, #99a19f);
+  color: #0a0a0a;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-description{
+  width: 89%;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: linear-gradient(135deg, #d6ebf6, #f5bebe);
+  color: #0a0a0a;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.btn-All {
+  width: 200px;
+  height: 40px;
+  background-color: #3bf64b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* Dark Mode Button */
+.dark-mode .btn {
+  background-color: #2563eb;
+}
+
+.dark-mode .btn:hover {
+  background-color: #1e40af;
+}
+
+/* Toggle Switch */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+
+
+  /* Task Form */
+  .task-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    background: rgb(36, 236, 10);
+    border-radius: 8px;
+  }
+  
+  .task-form input, .task-form textarea, .task-form select {
+    padding: 8px;
+    border: 1px solid #18a745;
+    border-radius: 5px;
+  }
+  
+  .task-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Task List */
+  .task-item {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(117, 104, 104);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .task-item button {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  /* Priority Styles */
+  .priority {
+   
+
+    background-color: #f2f2f3;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .priority.low {
+    border-left-width: 2px;
+    border-color: #3bf64b;
+    width: 70px;
+    align-items: center;
+    border-radius: 600px;
+    background-color: lightgreen;
+  
+  }
+  
+  .priority.medium {
+    border-left-width: 2px;
+    border-color: #3bf64b;
+    width: 70px;
+    align-items: center;
+    border-radius: 600px;
+    background-color: orange;
+    
+  }
+  
+  .priority.high {
+    border-left-width: 2px;
+    border-color: #3bf64b;
+    width: 70px;
+    align-items: center;
+    border-radius: 600px;
+    background-color: red;
+  }
+  

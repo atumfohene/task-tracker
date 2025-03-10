@@ -3,7 +3,7 @@ import { useTaskContext } from "../context/TaskContext";
 import { Task } from "../types";
 import { v4 as uuidv4 } from "uuid";
 import Filter from "./Filter";
-import "../styles/App.css";
+import "../styles/AppNew.css";
 
 
 const AddTaskForm: React.FC = () => {
