@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+    Task Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalistic task management application built using React, TypeScript, and Context API , featuring  priority filtering, search functionality, localStorage persistence, and drag-and-drop task reordering .
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   Features
 
-## Expanding the ESLint configuration
+  Add, Edit, Delete Tasks   
+  Filter Tasks by Priority (Low, Medium, High)   
+ Search Tasks by Title or Description   
+ Drag-and-Drop Task Reordering  (Powered by `@dnd-kit`)  
+ Data Persistence via localStorage   
+  Unit Tests for Task Components and Filters 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Tech Stack 
+-  React  (with Hooks)
+-  TypeScript 
+-  Context API  (Global State Management)
+-  Dnd-Kit  (for Drag-and-Drop)
+-  LocalStorage  (for data persistence)
+-  Jest & React Testing Library  (for unit tests)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Project Structure 
+/task-tracker
+│── /src
+│ ├── /components
+│ │ ├── AddTaskForm.tsx
+│ │ ├── TaskItem.tsx
+│ │ ├── TaskList.tsx
+│ │ ├── Filter.tsx
+│ │ ├── Search.tsx
+│ ├── /context
+│ │ ├── TaskContext.tsx
+│ ├── /hooks
+│ │ ├── useLocalStorage.ts
+│ ├── /tests
+│ │ ├── TaskList.test.tsx
+│ │ ├── Filter.test.tsx
+│ ├── /styles
+│ │ ├── App.css
+│ ├── App.tsx
+│ ├── index.tsx
+│ ├── types.ts
+│── package.json
+│── tsconfig.json
+│── README.md
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+Installation & Running Locally 
+Clone the Repository   
+```sh
+git clone https://github.com/yourusername/task-tracker.git
+cd task-tracker
+ State Management Approach
+Used Context API to manage tasks and filters globally.
+Stored tasks in localStorage to maintain data between sessions.
+Implemented Drag-and-Drop with @dnd-kit to allow task reordering.
+
