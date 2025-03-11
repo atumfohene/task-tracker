@@ -4,7 +4,7 @@ A minimalistic task management application built using React, TypeScript, and Co
 
 ---
 
-   Features
+Features
 
   Add, Edit, Delete Tasks   
   Filter Tasks by Priority (Low, Medium, High)   
@@ -54,10 +54,15 @@ Project Structure
 Installation & Running Locally 
 Clone the Repository   
 ```sh
-git clone https://github.com/yourusername/task-tracker.git
+git clone https://github.com/atumfohene/task-tracker.git
 cd task-tracker
- State Management Approach
-Used Context API to manage tasks and filters globally.
-Stored tasks in localStorage to maintain data between sessions.
-Implemented Drag-and-Drop with @dnd-kit to allow task reordering.
+npm install
+npm start
+npm run dev
+npm test
+
+My State Management Approach
+I used Context API to manage tasks and filters globally.
+I stored tasks in localStorage to maintain data between sessions.
+I implemented Drag-and-Drop with @dnd-kit to allow task reordering.
 
